@@ -197,6 +197,14 @@ class Owl extends StylePluginBase {
       '#default_value' => $this->options['responsiveRefreshRate'],
       '#description' => $this->t('Check window width changes every 200ms for responsive actions.'),
     );
+	
+    //keyboardNavigation
+    $form['keyboardNavigation'] = array(
+      '#type' => 'checkbox',
+      '#title' => $this->t('Keyboard navigation'),
+      '#default_value' => $this->options['keyboardNavigation'],
+      '#description' => $this->t('Turn off/on keyboard navigation.'),
+    );
     //mouseDrag
     $form['mouseDrag'] = array(
       '#type' => 'checkbox',

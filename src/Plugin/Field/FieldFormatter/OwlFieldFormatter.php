@@ -240,6 +240,14 @@ class OwlFieldFormatter extends EntityReferenceFormatterBase implements Containe
       '#default_value' => $this->getSetting('responsiveRefreshRate'),
       '#description' => $this->t('Check window width changes every 200ms for responsive actions.'),
     );
+    //keyboardNavigation
+    $element['keyboardNavigation'] = array(
+      '#type' => 'checkbox',
+      '#title' => $this->t('Keyboard navigation'),
+      '#default_value' => $this->getSetting('keyboardNavigation'),
+      '#description' => $this->t('Turn off/on keyboard navigation.'),
+    );
+
     //mouseDrag
     $element['mouseDrag'] = array(
       '#type' => 'checkbox',

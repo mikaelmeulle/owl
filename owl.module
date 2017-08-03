@@ -125,6 +125,7 @@ function _owl_default_settings($key = NULL) {
     'responsiveRefreshRate' => 200,
     'mouseDrag' => TRUE,
     'touchDrag' => TRUE,
+    'keyboardNavigation' => TRUE,
     'transitionStyle' => 'fade',
   );
 
@@ -160,6 +161,7 @@ function _owl_format_settings($settings) {
   );
 
   $settings['mouseDrag'] = (bool) $settings['mouseDrag'];
+  $settings['keyboardNavigation'] = (bool) $settings['keyboardNavigation'];
   $settings['pagination'] = (bool) $settings['pagination'];
   $settings['paginationNumbers'] = (bool) $settings['paginationNumbers'];
   $settings['responsive'] = (bool) $settings['responsive'];
