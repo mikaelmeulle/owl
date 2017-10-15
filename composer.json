@@ -1,0 +1,7 @@
+{
+	"name": "mikaelmeulle/owl",
+	"description": "owl module forked from https://github.com/tabvn/owl",
+	"type": "drupal-module",
+	"minimum-stability": "dev",
+	"prefer-stable": true
+}
