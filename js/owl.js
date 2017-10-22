@@ -6,7 +6,6 @@
 		    var $this_settings = $.parseJSON($this.attr('data-settings'));
 		    $this.owlCarousel($this_settings);
 		    if($this_settings['keyboardNavigation'] === true) {
-			    console.log("keyboard navigation enabled");
 			    $(document.documentElement).keyup(function (event) {
 				    if (event.keyCode == 37) {
 					    $this.trigger('owl.prev');
